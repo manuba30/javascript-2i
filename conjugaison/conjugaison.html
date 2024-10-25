@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conjugaison des verbes</title>
+    <link rel="stylesheet" href="conjugaison.css">
+</head>
+
+<body>
+    <h1>Conjugaison des verbes du premier groupe</h1>
+    
+    <label for="verb">Verbe à l'infinitif :</label>
+    <input type="text" id="verb" placeholder="Entrez un verbe (ex: parler)">
+    
+    <label for="tense">Choisissez un temps :</label>
+    <select id="tense">
+        <option value="present">Présent</option>
+        <option value="futur">Futur</option>
+        <option value="imparfait">Imparfait</option>
+    </select>
+
+    <button onclick="conjuguer()">Conjuguer</button>
+
+    <h2>Conjugaison :</h2>
+    <ul id="resultat"></ul>
+
+    <script src="conjugaison.js"></script>
+</body>
+
+</html>
